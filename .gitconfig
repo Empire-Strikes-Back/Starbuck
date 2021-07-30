@@ -1,0 +1,5 @@
+[user]
+	email = cljc-libraries@libraries
+	name = cljc-libraries
+
+# git config --local include.path ../.gitconfig
