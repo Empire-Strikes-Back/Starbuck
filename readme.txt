@@ -1,4 +1,4 @@
-we are cljc-libraries
+we are galactica libraries
 
 i am clj-go-libp2p - i use go-libp2p from clojure 
 
