@@ -1,4 +1,4 @@
-(ns cljctools.ipfs.runtime.node
+(ns galactica.ipfs.runtime.node
   (:require
    [clojure.core.async :as a :refer [chan go go-loop <! >! take! put! offer! poll! alt! alts! close!
                                      pub sub unsub mult tap untap mix admix unmix pipe
@@ -6,9 +6,9 @@
                                      pipeline pipeline-async]]
    [clojure.spec.alpha :as s]
 
-   [cljctools.ipfs.spec :as ipfs.spec]
-   [cljctools.ipfs.protocols :as ipfs.protocols]
-   [cljctools.ipfs.runtime.impl :as ipfs.runtime.impl])
+   [galactica.ipfs.spec :as ipfs.spec]
+   [galactica.ipfs.protocols :as ipfs.protocols]
+   [galactica.ipfs.runtime.impl :as ipfs.runtime.impl])
   (:import
    (io.libp2p.core Connection Host PeerId Stream)
    (io.libp2p.core.dsl HostBuilder)
@@ -26,7 +26,7 @@
    (kotlin.jvm.functions Function1)
    (java.util.concurrent CompletableFuture TimeUnit)
    (com.google.protobuf ByteString)
-   (cljctools.ipfs.runtime NodeProto$DhtMessage NodeProto$DhtMessage$Type NodeProto$DhtMessage$Peer)))
+   (galactica.ipfs.runtime NodeProto$DhtMessage NodeProto$DhtMessage$Type NodeProto$DhtMessage$Peer)))
 
 (do (set! *warn-on-reflection* true) (set! *unchecked-math* true))
 

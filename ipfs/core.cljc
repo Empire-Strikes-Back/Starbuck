@@ -1,9 +1,9 @@
-(ns cljctools.ipfs.core
+(ns galactica.ipfs.core
   (:require
    [clojure.string]
-   [cljctools.bytes.protocols :as bytes.protocols]
-   [cljctools.bytes.runtime.core :as bytes.runtime.core]
-   [cljctools.varint.core :as varint.core]))
+   [galactica.bytes.protocols :as bytes.protocols]
+   [galactica.bytes.runtime.core :as bytes.runtime.core]
+   [galactica.varint.core :as varint.core]))
 
 (defn decode-mplex
   ([buffer]

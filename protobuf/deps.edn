@@ -1,2 +1,2 @@
 {:paths ["src"]
- :deps {github.cljctools.cljctools/varint {:local/root "../varint"}}}
+ :deps {galactica/varint {:local/root "../varint"}}}

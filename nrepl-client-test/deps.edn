@@ -3,7 +3,7 @@
 
 {:paths []
  :deps
- {github.cljctools/nrepl-client {:local/root "./src/nrepl-client"}}
+ {galactica/nrepl-client {:local/root "./src/nrepl-client"}}
 
  :aliases
  {:core
@@ -20,13 +20,13 @@
   {:extra-deps {org.clojure/test.check {:mvn/version "1.0.0"}}}
 
   :repl
-  {:extra-deps {github.cljctools/deps-repl {:git/url "https://github.com/cljctools/deps-repl"
+  {:extra-deps {galactica/deps-repl {:git/url "https://github.com/galactica/deps-repl"
                                             :sha "08283d3841c5948b0b9d36a977ebfdad111cdb2f"
                                             :tag "v2.0.1"}
                 nrepl/nrepl {:mvn/version "0.8.3"}
                 cider/cider-nrepl {:mvn/version "0.25.5"}}
    :main-opts ["-m" "lambdaisland.nrepl.main"
-               "--init-ns" "cljctools.nrepl-client.core-test"
+               "--init-ns" "galactica.nrepl-client.core-test"
                "--port" "7788"
                "--bind" "0.0.0.0"
                "--middleware" "cider.nrepl/cider-middleware"]}

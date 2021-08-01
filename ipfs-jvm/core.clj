@@ -1,15 +1,15 @@
-(ns cljctools.ipfs.runtime.core
+(ns galactica.ipfs.runtime.core
   (:require
    [clojure.core.async :as a :refer [chan go go-loop <! >! take! put! offer! poll! do-alts alt! alts! close!
                                      pub sub unsub mult tap untap mix admix unmix pipe
                                      timeout to-chan  sliding-buffer dropping-buffer
                                      pipeline pipeline-async]]
 
-   [cljctools.bytes.protocols :as bytes.protocols]
-   [cljctools.bytes.runtime.core :as bytes.runtime.core]
+   [galactica.bytes.protocols :as bytes.protocols]
+   [galactica.bytes.runtime.core :as bytes.runtime.core]
 
-   [cljctools.ipfs.protocols :as ipfs.protocols]
-   [cljctools.ipfs.spec :as ipfs.spec])
+   [galactica.ipfs.protocols :as ipfs.protocols]
+   [galactica.ipfs.spec :as ipfs.spec])
   (:import
    (io.ipfs.multiaddr MultiAddress)
    (io.ipfs.multibase Multibase Base58)
@@ -34,7 +34,7 @@
    (io.netty.buffer ByteBuf ByteBufUtil Unpooled)
    (java.util.concurrent CompletableFuture TimeUnit)
    (com.google.protobuf ByteString)
-   (cljctools.ipfs.runtime DhtProto$DhtMessage DhtProto$DhtMessage$Type)))
+   (galactica.ipfs.runtime DhtProto$DhtMessage DhtProto$DhtMessage$Type)))
 
 
 

@@ -1,4 +1,4 @@
-(ns cljctools.ipfs.protocols)
+(ns galactica.ipfs.protocols)
 
 (defprotocol ToByteArray
   (to-byte-array* [_]))

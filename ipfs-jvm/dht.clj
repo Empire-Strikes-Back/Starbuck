@@ -6,9 +6,9 @@
                                      pipeline pipeline-async]]
    [clojure.spec.alpha :as s]
 
-   [cljctools.ipfs.spec :as ipfs.spec]
-   [cljctools.ipfs.protocols :as ipfs.protocols]
-   [cljctools.ipfs.runtime.impl :as ipfs.runtime.impl])
+   [galactica.ipfs.spec :as ipfs.spec]
+   [galactica.ipfs.protocols :as ipfs.protocols]
+   [galactica.ipfs.runtime.impl :as ipfs.runtime.impl])
   (:import
    (io.libp2p.core Connection Host PeerId Stream)
    (io.libp2p.core.dsl HostBuilder)
@@ -22,7 +22,7 @@
    (kotlin.jvm.functions Function1)
    (java.util.concurrent CompletableFuture TimeUnit)
    (com.google.protobuf ByteString)
-   (cljctools.ipfs.runtime DhtProto$DhtMessage DhtProto$DhtMessage$Type DhtProto$DhtMessage$Peer)))
+   (galactica.ipfs.runtime DhtProto$DhtMessage DhtProto$DhtMessage$Type DhtProto$DhtMessage$Peer)))
 
 (do (set! *warn-on-reflection* true) (set! *unchecked-math* true))
 
@@ -210,7 +210,7 @@
 (comment
 
   (require
-   '[cljctools.ipfs.runtime.dht :as ipfs.runtime.dht]
+   '[galactica.ipfs.runtime.dht :as ipfs.runtime.dht]
    :reload)
 
 

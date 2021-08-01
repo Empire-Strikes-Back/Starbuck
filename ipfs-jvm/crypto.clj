@@ -1,7 +1,7 @@
-(ns cljctools.ipfs.runtime.crypto
+(ns galactica.ipfs.runtime.crypto
   (:require
-   [cljctools.ipfs.protocols :as ipfs.protocols]
-   [cljctools.ipfs.spec :as ipfs.spec]
+   [galactica.ipfs.protocols :as ipfs.protocols]
+   [galactica.ipfs.spec :as ipfs.spec]
    [clojure.java.io :as io :refer [input-stream]])
   (:import
    (java.security PrivateKey PublicKey SecureRandom Security MessageDigest Signature KeyPairGenerator KeyPair KeyFactory Provider)
@@ -18,7 +18,7 @@
    (org.bouncycastle.asn1 ASN1Primitive)
    (com.google.protobuf ByteString)
    (org.bouncycastle.jcajce.provider.digest SHA3 SHA3$Digest224 SHA3$Digest256 SHA3$Digest384 SHA3$Digest512)
-   (cljctools.ipfs.runtime DhtProto DhtProto$KeyType DhtProto$PrivateKey DhtProto$PublicKey)))
+   (galactica.ipfs.runtime DhtProto DhtProto$KeyType DhtProto$PrivateKey DhtProto$PublicKey)))
 
 (do (set! *warn-on-reflection* true) (set! *unchecked-math* true))
 
@@ -273,10 +273,10 @@
 (comment
 
   (require
-   '[cljctools.bytes.runtime.core :as bytes.runtime.core]
-   '[cljctools.ipfs.protocols :as ipfs.protocols]
-   '[cljctools.ipfs.spec :as ipfs.spec]
-   '[cljctools.ipfs.runtime.crypto :refer [generate-keypair
+   '[galactica.bytes.runtime.core :as bytes.runtime.core]
+   '[galactica.ipfs.protocols :as ipfs.protocols]
+   '[galactica.ipfs.spec :as ipfs.spec]
+   '[galactica.ipfs.runtime.crypto :refer [generate-keypair
                                            protobuf-encode-private-key
                                            protobuf-decode-private-key
                                            protobuf-encode-public-key

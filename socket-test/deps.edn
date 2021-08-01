@@ -18,16 +18,16 @@
   {:extra-deps {org.clojure/test.check {:mvn/version "1.0.0"}}}
 
   :nodejs-net
-  {:extra-deps {github.cljctools/socket-nodejs-test {:local/root "./src/socket-nodejs-net"}}}
+  {:extra-deps {galactica/socket-nodejs-test {:local/root "./src/socket-nodejs-net"}}}
 
   :repl
-  {:extra-deps {github.cljctools/deps-repl {:git/url "https://github.com/cljctools/deps-repl"
+  {:extra-deps {galactica/deps-repl {:git/url "https://github.com/galactica/deps-repl"
                                             :sha "08283d3841c5948b0b9d36a977ebfdad111cdb2f"
                                             :tag "v2.0.1"}
                 nrepl/nrepl {:mvn/version "0.8.3"}
                 cider/cider-nrepl {:mvn/version "0.25.5"}}
    :main-opts ["-m" "lambdaisland.nrepl.main"
-               "--init-ns" "cljctools.socket.java-net-test"
+               "--init-ns" "galactica.socket.java-net-test"
                "--port" "7788"
                "--bind" "0.0.0.0"
                "--middleware" "cider.nrepl/cider-middleware"]}
@@ -37,7 +37,7 @@
                                                    :sha "b6b3193fcc42659d7e46ecd1884a228993441182"}}
    :main-opts ["-m" "cognitect.test-runner"
                "-d" "src/socket-test"
-               "-n" "cljctools.socket.java-net-test"]}
+               "-n" "galactica.socket.java-net-test"]}
 
   :cljs-test-runner
   {:extra-deps {github.Olical/cljs-test-runner {:git/url "https://github.com/Olical/cljs-test-runner"
