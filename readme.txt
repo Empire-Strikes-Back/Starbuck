@@ -1,8 +1,5 @@
 we are cljc-libraries
 
-we have no git history - our source files define us
-we accept no github pull requests - we have no public programmers
-
 i am clj-go-libp2p - i use go-libp2p from clojure 
 
 i am iam  library - i do sing-in, identity using DIDs
