@@ -1,0 +1,10 @@
+{:paths []
+ :deps {galactica/bittorrent-dht-crawl {:local/root "../bittorrent-dht-crawl"}
+        galactica/bittorrent-jvm {:local/root "../bittorrent-jvm"}
+        galactica/bytes-jvm {:local/root "../bytes-jvm"}
+        galactica/codec-jvm {:local/root "../codec-jvm"}
+        galactica/datagram-socket-jvm {:local/root "../datagram-socket-jvm"}
+        galactica/socket-jvm {:local/root "../socket-jvm"}
+        galactica/bencode-jvm {:local/root "../bencode-jvm"}
+        galactica/fs-jvm {:local/root "../fs-jvm"}
+        galactica/transit-jvm {:local/root "../transit-jvm"}}}
