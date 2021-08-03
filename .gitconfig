@@ -1,5 +1,5 @@
 [user]
-	email = galactica@libraries
+	email = galactica@program
 	name = galactica
 
 # git config --local include.path ../.gitconfig
