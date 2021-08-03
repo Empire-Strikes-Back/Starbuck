@@ -17,17 +17,5 @@ main(){
     -M -m galactica.main
 }
 
-uberjar(){
-  clojure \
-    -X:uberjar hf.depstar/uberjar \
-    :aot true \
-    :jar out/galactica.standalone.jar \
-    :verbose false \
-    :main-class galactica.main
-  mkdir -p out/jpackage-input
-  mv out/galactica.standalone.jar out/jpackage-input/
-}
-
-
 
 "$@"
