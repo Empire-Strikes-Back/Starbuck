@@ -1,8 +1,0 @@
-{:paths ["src"]
- :deps {io.rsocket/rsocket-core {:mvn/version "1.1.0"}
-        io.rsocket/rsocket-transport-netty {:mvn/version "1.1.0"}
-
-        galactica/cljc {:local/root  "../cljc"}
-        galactica/csp {:local/root  "../csp"}
-
-        galactica/rsocket-meta {:local/root  "../rsocket-meta"}}}

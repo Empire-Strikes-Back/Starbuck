@@ -1,4 +1,0 @@
-{:paths ["src"]
- :deps {galactica/cljc {:local/root  "../cljc"}
-        galactica/csp {:local/root  "../csp"}
-        galactica/rsocket-meta {:local/root  "../rsocket-meta"}}}

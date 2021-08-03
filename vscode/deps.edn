@@ -1,2 +1,0 @@
-{:paths ["src"]
- :deps {galactica/vscode.meta {:local/root "../meta"}}}

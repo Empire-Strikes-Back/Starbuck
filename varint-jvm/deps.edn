@@ -1,3 +1,0 @@
-{:paths []
- :deps {galactica/varint {:local/root "../varint"}
-        galactica/bytes-jvm {:local/root "../bytes-jvm"}}}
