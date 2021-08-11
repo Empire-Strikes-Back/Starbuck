@@ -1,2 +1,2 @@
-{:paths ["src"]
+{:paths ["source"]
  :deps {ring-cors/ring-cors {:mvn/version "0.1.13"}}}                

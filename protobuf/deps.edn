@@ -1,2 +1,2 @@
-{:paths ["src"]
+{:paths ["source"]
  :deps {galactica/varint {:local/root "../varint"}}}
