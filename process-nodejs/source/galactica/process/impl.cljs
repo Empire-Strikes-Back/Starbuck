@@ -141,7 +141,7 @@
                                      "env" (js/Object.assign
                                             #js {}
                                             js/global.process.env
-                                            #js {"SHADOWCLJS_NREPL_PORT" 8895
+                                            #js {"SHADOWCLJS_PORT" 8895
                                                  "SHADOWCLJS_HTTP_PORT" 9635
                                                  "SHADOWCLJS_DEVTOOLS_URL" "http://localhost:9635"
                                                  "SHADOWCLJS_DEVTOOLS_HTTP_PORT" 9555})
@@ -276,7 +276,7 @@
                                  "env" (js/Object.assign
                                         #js {}
                                         js/global.process.env
-                                        #js {"SHADOWCLJS_NREPL_PORT" 8895
+                                        #js {"SHADOWCLJS__PORT" 8895
                                              "SHADOWCLJS_HTTP_PORT" 9635
                                              "SHADOWCLJS_DEVTOOLS_URL" "http://localhost:9635"
                                              "SHADOWCLJS_DEVTOOLS_HTTP_PORT" 9555})

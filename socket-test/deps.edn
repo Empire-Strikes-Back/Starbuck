@@ -9,7 +9,7 @@
                 org.clojure/core.async {:mvn/version "1.1.587"}}}
   :clj
   {:extra-deps {org.clojure/clojure {:mvn/version "1.10.3"}
-                nrepl/bencode  {:mvn/version "1.1.0"}}}
+                }}
 
   :cljs
   {:extra-deps {org.clojure/clojurescript {:mvn/version "1.10.758"}}}
@@ -24,13 +24,9 @@
   {:extra-deps {galactica/deps-repl {:git/url "https://github.com/galactica/deps-repl"
                                             :sha "08283d3841c5948b0b9d36a977ebfdad111cdb2f"
                                             :tag "v2.0.1"}
-                nrepl/nrepl {:mvn/version "0.8.3"}
-                cider/cider-nrepl {:mvn/version "0.25.5"}}
-   :main-opts ["-m" "lambdaisland.nrepl.main"
-               "--init-ns" "galactica.socket.java-net-test"
-               "--port" "7788"
-               "--bind" "0.0.0.0"
-               "--middleware" "cider.nrepl/cider-middleware"]}
+                
+                }
+   :main-opts []}
 
   :clj-test-runner
   {:extra-deps {github.cognitect-labs/test-runner {:git/url "https://github.com/cognitect-labs/test-runner"
