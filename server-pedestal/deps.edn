@@ -1,4 +1,4 @@
-{:paths ["source"]
+{:paths ["src"]
  :deps {galactica/net.meta {:local/root "../../../meta"}
         galactica/net.server.meta {:local/root "../../meta"}
         io.pedestal/pedestal.service {:mvn/version "0.5.8"}
