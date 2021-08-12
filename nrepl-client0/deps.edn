@@ -1,2 +1,0 @@
-{:paths ["source"]
- :deps {galactica/nrepl.client.meta {:local/root "../meta"}}}
